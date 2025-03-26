@@ -5,10 +5,11 @@ class UDPClient {
     public static void main(String args[]) throws Exception {
         Scanner in = new Scanner(System.in);
         DatagramSocket dgSocket = new DatagramSocket();
-        InetAddress address = InetAddress.getByName("127.0.0.1");
         String message;
         byte[] buffer;
         DatagramPacket dgPacket;
+        InetAddress address = InetAddress.getByName("127.0.0.1");
+        
         System.out.println("Enter messages to send: ");
         while (true) {
             message = in.nextLine();

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class lab3 {
     static String calCRC(String data, String poly, boolean error) {
         StringBuffer rem = new StringBuffer(data);
-        if (!error)
+        if (!error) 
             for (int i = 0; i < poly.length() - 1; i++)
                 rem.append("0");
         for (int i = 0; i < rem.length() - poly.length() + 1; i++)
